@@ -53,14 +53,7 @@ def loadTags(filename):
 
 
 def loadBooksTags(catalog):
-    booksTagsFile = cf.data_dir + catalog
-    input_file = csv.DictReader(open(booksTagsFile, encoding='utf-8'))
-    loadedBooks = model.createBooksWithTagsList()
-    for book in input_file:
-        bookToAdd = {book['goodreads_book_id']: [{book['tag_id']: book['count']}]}
-        if model.bookIsPresent(loadedBooks,book['goodreads_book_id']):
-            model.addTagToBook(loadedBooks, book['goodreads_book_id'], book['tag_id'], book['count'])
-        else:
-            model.addBookWithTag(loadedBooks, bookToAdd)
-    return loadedBooks
-    
+    """
+    TODO
+    """
+    pass
