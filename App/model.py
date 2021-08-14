@@ -71,3 +71,30 @@ def createTagList():
     """
     taglist = lt.newList(datastructure='SINGLE_LINKED')
     return taglist
+
+
+def createBooksWithTagsList():
+    """
+    Esta funcion crea una lista vacio. Esta lista se utilizará para
+    guardar todos los tags asignados a cada uno de los libros.
+    """
+
+    booksTagsList = lt.newList(datastructure='SINGLE_LINKED')
+    return booksTagsList
+
+
+def bookIsPresent(booklist, book_id):
+    for book in booklist:
+        if type(booklist[book]) == type({}):
+            return True
+    return False
+    
+
+def addTagToBook(booklist, book_id, tag_id, count):
+    elem = lt.getElement(booklist, int(book_id)-1)
+    print(elem)
+    lt.changeInfo(booklist, int(book_id)-1, elem)
+
+
+def addBookWithTag(booklist, book):
+    lt.addLast(booklist, book)
