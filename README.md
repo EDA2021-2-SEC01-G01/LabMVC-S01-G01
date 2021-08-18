@@ -1,3 +1,8 @@
+Juan David Guevara Arévalo - jd.guevaraa1 - 202116875; Usuario Git: JuanDGA
+Kevin David Hernandez - k.hernantezt - 
+202111724; Usuario Git: Illuminatom
+
+
 #ISIS1225 - Estructura de un proyecto
 
 Este proyecto busca mostrar una posible forma de organizar el código que se va a desarrollar en los proyectos del curso.
